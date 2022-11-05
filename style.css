@@ -59,9 +59,9 @@ ul.navbar > li > a {
   padding-top: 60px;
 }
 
-  .lotinfo.map {
+.map {
     position: absolute;
-    right: 10px;
+    right: 20px;
     top: 525px;
   }
 
@@ -89,4 +89,16 @@ ul.navbar > li > a {
 
 .about > h3 {
   font-size: 35pt;
+}
+
+h2.lotInfo {
+  font-size: 24pt;
+  left: 15px;
+  position: relative;
+}
+
+#lotList {
+  font-size: 16pt;
+  position: relative;
+  left: 20px;
 }
