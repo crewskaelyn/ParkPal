@@ -19,8 +19,6 @@ namespace tigerhacks{
             string percentage = getPercentages();
 
             Console.WriteLine(percentage);
-            
-
         
         }
 
