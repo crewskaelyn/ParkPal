@@ -1,4 +1,25 @@
-.container {
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.heading {
+    background-image: url("columbia.jpeg");
+    background-color: #cccccc;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .title {
+    position: absolute;
+    left: 25px;
+    font-size: 25px;
+    color: white;
+  }
+
+.menuicon {
     display: inline-block;
     cursor: pointer;
     position: fixed;
@@ -7,11 +28,10 @@
     z-index: 1;
 }
 
-
 .bar1, .bar2, .bar3 {
     width: 35px;
     height: 5px;
-    background-color: #333;
+    background-color: white;
     margin: 6px 0;
     transition: 0.4s;
 }
@@ -24,4 +44,12 @@
 
 .change .bar3 {
     transform: translate(0, -11px) rotate(45deg);
+}
+
+img {
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%;
 }
