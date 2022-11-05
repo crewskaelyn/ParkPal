@@ -53,42 +53,7 @@ namespace tigerhacks{
             return locationName + ".txt";
     }
 
-        static string getPercentages(){
-            string userPercent;
-
-            while(true){
-                string percent;
-                Console.WriteLine("On a scale of 0% to 100%, full does the parking lot seem to you?");
-                Console.WriteLine("");
-                percent = Console.ReadLine();
-
-                if(percent.EndsWith("%")){
-                    userPercent = percent.Remove(percent.Length - 1, 1);
-                    continue;
-                }else{
-                    userPercent = percent;
-                    break;
-                }
-
-                
-
-            }
-
-            while(true){
-                var test = int.Parse(userPercent);
-
-                var percentList = Enumerable.Range(0, 100).ToList();
-                if(percentList.Contains(test) == false){
-                    Console.WriteLine("Error: Please enter a number from 0-100!");
-                    continue;
-                }else{
-                    Console.WriteLine("You have estimated your parking lot to be {0}% full!", userPercent);
-                    break;
-                }
-            }
-                
-                return userPercent;
-    }
+    
 
     }
 

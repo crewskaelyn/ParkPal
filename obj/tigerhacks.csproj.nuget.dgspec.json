@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\docto\\OneDrive\\Desktop\\tigerhacks\\repo\\tigerhacks\\tigerhacks.csproj": {}
+    "C:\\Users\\joker\\Documents\\GitHub\\tigerhacks\\tigerhacks.csproj": {}
   },
   "projects": {
-    "C:\\Users\\docto\\OneDrive\\Desktop\\tigerhacks\\repo\\tigerhacks\\tigerhacks.csproj": {
+    "C:\\Users\\joker\\Documents\\GitHub\\tigerhacks\\tigerhacks.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\docto\\OneDrive\\Desktop\\tigerhacks\\repo\\tigerhacks\\tigerhacks.csproj",
+        "projectUniqueName": "C:\\Users\\joker\\Documents\\GitHub\\tigerhacks\\tigerhacks.csproj",
         "projectName": "tigerhacks",
-        "projectPath": "C:\\Users\\docto\\OneDrive\\Desktop\\tigerhacks\\repo\\tigerhacks\\tigerhacks.csproj",
-        "packagesPath": "C:\\Users\\docto\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\docto\\OneDrive\\Desktop\\tigerhacks\\repo\\tigerhacks\\obj\\",
+        "projectPath": "C:\\Users\\joker\\Documents\\GitHub\\tigerhacks\\tigerhacks.csproj",
+        "packagesPath": "C:\\Users\\joker\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\joker\\Documents\\GitHub\\tigerhacks\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\docto\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\joker\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
