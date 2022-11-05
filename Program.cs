@@ -3,6 +3,7 @@ using System.IO;
 using System.Collections;
 using System.Collections.Generic;
 
+
 //Goal 1 - Create a database of the different parkings lots and streets we wish to use within our program.
 //Goal 2 - Create a program that marks the percentages of parking lots in regard to how full they are.
 //Goal 3 - Locations
