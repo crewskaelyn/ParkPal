@@ -1,71 +1,77 @@
-body {
-    font-family: Arial;
+body, html {
+  height: 100%;
+  font-family: Arial, Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.title {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  font-size: 40pt;
+  transform: translate(-50%, -50%);
+  color: white;
 }
 
 .heading {
-    background-image: url("columbia.jpeg");
-    background-color: #cccccc;
-    height: 500px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    border: 10px solid #333;
-  }
-  
-.title {
-    position: fixed;
-    top: -20px;
-    left: 40px;
-    font-size: 24px;
-    color: white;
-    z-index: 2;
-    opacity: 70%;
-  }
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("columbia.jpeg");
+  height: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 105%;
+  position: relative;
+}
 
-.navbar {
-    overflow: hidden;
-    background-color: #333;
-    opacity: 70%;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    left:0;
-    height: 80px;
-    z-index: 1;
-  }
-  
+ul.navbar {
+  padding-left: 0px;
+  background-color: #333;
+  text-align: center;
+  width: 106%;
+  margin: 0;
+}
+ul.navbar > li {
+  display: inline-block;
+  padding: 10px 60px;
+}
 
-  .navbar a {
-    float: right; 
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 30px 20px;
-    text-decoration: none;
-    font-size: 25px;
-    margin-right: 10px; 
-  }
-  
+ul.navbar > li:hover {
+  background-color: #848484;
+}
+ul.navbar > li > a {
+  color: white;
+  text-decoration: none;
+}
 
-  .navbar a:hover {
-    background: #ddd;
-    color: black;
-  }
+.content {
+  padding: 16px;
+}
 
-  .map {
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+  .lotinfo.map {
     position: absolute;
     right: 10px;
     top: 525px;
   }
 
-  .code {
+  .code.content {
     position: relative;
     left: 0;
   }
 
   .accordion:after {
-    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    content: '\02795';
     font-size: 13px;
     color: #777;
     float: right;
@@ -73,5 +79,14 @@ body {
   }
   
   .active:after {
-    content: "\2796"; /* Unicode character for "minus" sign (-) */
+    content: "\2796";
   }
+
+  .about.content {
+    position: relative;
+    margin-left: 15px;
+  }
+
+.about > h3 {
+  font-size: 35pt;
+}

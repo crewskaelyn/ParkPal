@@ -12,11 +12,28 @@
             </div>
         </div>
         <div class="headerbar"></div>
-        <div class="navbar">
-            <a href="./lotinfo.html">Lot Info</a>
-            <a href="./code.html">Code</a>
-            <a href="./about.html">About</a>
-            <a href="./home.html">Home</a>
-          </div>
+        <ul class="navbar">
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./lotinfo.html">Lot Info</a></li>
+            <li><a href="./code.html">Code</a></li>
+        </ul>
+        <div class="content">
+
+        </div>
+        <script>
+            window.onscroll = function() {myFunction()};
+            
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+            
+            function myFunction() {
+              if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+              } else {
+                navbar.classList.remove("sticky");
+              }
+            }
+        </script>
     </body>
 </html>
