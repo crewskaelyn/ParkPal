@@ -98,8 +98,23 @@ h2.lotInfo {
   left: 20px;
 }
 
-h2.about {
-  font-size: 45pt;
+#about {
   position: relative;
-  left: 20px;
+  left: 15px;
+}
+
+#about h2 {
+  font-size: 30pt;
+}
+
+#about h3 {
+  font-size: 20pt;
+}
+
+#about h4 {
+  font-size: 15pt;
+}
+
+#about p {
+  font-size: 13pt;
 }
