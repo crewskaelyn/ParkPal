@@ -65,7 +65,7 @@ body, html {
 } 
 .map {
     position: absolute;
-    right: 20px;
+    right: 25px;
     top: 525px;
   }
 
@@ -103,18 +103,97 @@ h2.lotInfo {
   left: 15px;
 }
 
-#about h2 {
+h2 {
   font-size: 30pt;
 }
 
-#about h3 {
+h3 {
   font-size: 20pt;
 }
 
-#about h4 {
+h4 {
   font-size: 15pt;
 }
 
-#about p {
+p {
   font-size: 13pt;
+}
+
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #010a55;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #00109e;
+}
+
+div.container {
+  position: relative;
+  left: 15px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 14px;
+  width: 50%;
+}
+
+#code {
+  position: relative;
+  left: 15px;
+}
+
+#parking {
+  position: relative;
+  left: 15px;
+}
+
+label {
+  font-size: 20px;
+  position:relative;
+}
+
+#home {
+  position:relative;
+  left:15px;
+}
+
+ol {
+  font-size: 25px;
+  position: relative;
+  left: 140px;
+}
+
+#bestSpot {
+  position: relative;
+  left: 15px;
+  background-color: #f2f2f2;
+  padding: 14px;
+  width: 50%;
+  text-indent: 25px;
+}
+
+#bestSpot li {
+  margin-bottom: 10px;
+}
+
+#bestSpot h4 {
+  text-indent: 120px;
+  font-size: 25px;
 }
