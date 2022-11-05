@@ -2,26 +2,26 @@
 using System.IO;
 using System.Collections;
 using System.Collections.Generic;
-
-
-//Goal 1 - Create a database of the different parkings lots and streets we wish to use within our program.
-//Goal 2 - Create a program that marks the percentages of parking lots in regard to how full they are.
-//Goal 3 - Locations
-//Goal 4 - User Login Features
-//Goal 5 - Information attached to each parking lot, nearby businesses and food places.
-
 namespace tigerhacks{
 
     class Program
     {
         static void Main(string[] args){
+
+
+
+
             string location = getLocation();
             string percentage = getPercentages();
+
+            writeToData(location,percentage);
+
+
         
         }
 
         static string getLocation(){
-            string fileName = "";
+            string lotLocation = "";
             
             while(true){
                 string location = "";
@@ -32,24 +32,21 @@ namespace tigerhacks{
                 Console.WriteLine(String.Join("\n", parkinglots));
                 location = Console.ReadLine();
                 lotsRange = lotsRange.ConvertAll(d => d.ToLower());
-                fileName = location.ToLower();
+                lotLocation = location.ToLower();
 
-                if(lotsRange.Contains(fileName) == false){
+                if(lotsRange.Contains(lotLocation) == false){
                     Console.WriteLine("Error: Please enter a parking lot on the List!");
                     continue;
                 }else{
-                    Console.WriteLine("You have selected {0} as your parking spot!", fileName);
+                    Console.WriteLine("You have selected {0} as your parking spot!", lotLocation);
                     break;
                 }
 
 
     }
-            return setName(fileName);
+            return lotLocation;
     }
 
-        static string setName(string locationName){
-            return locationName + ".txt";
-    }
 
         static string getPercentages(){
             string userPercent;
@@ -87,6 +84,23 @@ namespace tigerhacks{
                 
                 return userPercent;
     }
+
+        static void writeToData (string location, string percentage){
+
+            StreamWriter sw = new StreamWriter("parkingData.txt", true);
+            try{
+                sw.WriteLine(location);
+                sw.WriteLine(percentage);
+                sw.Close();
+            }catch(Exception err){
+                Console.WriteLine("Exception: " + err.Message);
+            }finally{
+                if (sw != null){
+                    sw.Close();
+                }
+                Console.WriteLine($"\n{"parkingData.txt"} was successfully saved.");
+            }
+        }
     
 
     
