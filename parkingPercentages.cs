@@ -2,7 +2,7 @@ using System;
 
 namespace tigerhacks{
     
-    class parkingPercentages{
+    class parkingPercentages : parkingLots{
 
     }
 }

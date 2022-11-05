@@ -1,0 +1,15 @@
+C:\Users\joker\Documents\GitHub\tigerhacks\bin\Debug\net6.0\tigerhacks.exe
+C:\Users\joker\Documents\GitHub\tigerhacks\bin\Debug\net6.0\tigerhacks.deps.json
+C:\Users\joker\Documents\GitHub\tigerhacks\bin\Debug\net6.0\tigerhacks.runtimeconfig.json
+C:\Users\joker\Documents\GitHub\tigerhacks\bin\Debug\net6.0\tigerhacks.dll
+C:\Users\joker\Documents\GitHub\tigerhacks\bin\Debug\net6.0\tigerhacks.pdb
+C:\Users\joker\Documents\GitHub\tigerhacks\obj\Debug\net6.0\tigerhacks.csproj.AssemblyReference.cache
+C:\Users\joker\Documents\GitHub\tigerhacks\obj\Debug\net6.0\tigerhacks.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\joker\Documents\GitHub\tigerhacks\obj\Debug\net6.0\tigerhacks.AssemblyInfoInputs.cache
+C:\Users\joker\Documents\GitHub\tigerhacks\obj\Debug\net6.0\tigerhacks.AssemblyInfo.cs
+C:\Users\joker\Documents\GitHub\tigerhacks\obj\Debug\net6.0\tigerhacks.csproj.CoreCompileInputs.cache
+C:\Users\joker\Documents\GitHub\tigerhacks\obj\Debug\net6.0\tigerhacks.dll
+C:\Users\joker\Documents\GitHub\tigerhacks\obj\Debug\net6.0\refint\tigerhacks.dll
+C:\Users\joker\Documents\GitHub\tigerhacks\obj\Debug\net6.0\tigerhacks.pdb
+C:\Users\joker\Documents\GitHub\tigerhacks\obj\Debug\net6.0\tigerhacks.genruntimeconfig.cache
+C:\Users\joker\Documents\GitHub\tigerhacks\obj\Debug\net6.0\ref\tigerhacks.dll

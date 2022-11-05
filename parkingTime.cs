@@ -2,9 +2,9 @@ using System;
 
 namespace tigerhacks{
     
-    class parkingTime{
+    class parkingTime : parkingLots{
 
     }
 }
-//What % full is the parking lot?
+
 //How long they are there for?

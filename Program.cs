@@ -12,14 +12,24 @@ namespace tigerhacks{
     {
         static void Main(string[] args)
     {
-            string[] lots = { "lot1", "lot2" };
-            var myLinqQuery = from lot in lots
-                    where lot.Contains('a')
-                    select lot;
+        string location = "";
+        Console.WriteLine("Where are you parking today? Type the name of one of the parking lots below!");
+        Console.WriteLine("");
+        string[] parkinglots = { "Virginia Ave", "Conley", "10th & Cherry", "Hitt Street", "Turner Ave", "5th & Walnut", "Short Street Garage", "8th & Cherry", "6th & Cherry", "8th & Walnut", "UM Hospital", "William Street Garage", "UM Lot A", "UM Lot AV8", "UM Lot AV11", "UM Lot G", "Lot J"};
+        List<string> lotsRange = new List<string>(parkinglots);
 
-            foreach (var lot in myLinqQuery){
-                Console.WriteLine(lot);
-        }
+        Console.WriteLine(String.Join("\n", parkinglots));
+
+        location = Console.ReadLine();
+
+        Console.WriteLine("You have selected {0} as your parking spot!", location);
+
+        string fileName = location.ToLower();
+
+        
+
+        Console.WriteLine(fileName);
+        
     }
 }
 }
