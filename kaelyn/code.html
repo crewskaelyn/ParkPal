@@ -12,13 +12,30 @@
             </div>
         </div>
         <div class="headerbar"></div>
-        <div class="navbar">
-            <a href="./lotinfo.html">Lot Info</a>
-            <a href="./code.html">Code</a>
-            <a href="./about.html">About</a>
-            <a href="./home.html">Home</a>
+        <ul class="navbar">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./lotinfo.html">Lot Info</a></li>
+            <li><a href="./code.html">Code</a></li>
+        </ul>
+        <div class="content">
+
         </div>
-        <div class="code">
+        <script>
+            window.onscroll = function() {myFunction()};
+            
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+            
+            function myFunction() {
+              if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+              } else {
+                navbar.classList.remove("sticky");
+              }
+            }
+        </script>
+        <div class="content">
             <h2>Code</h2>
         </div>
         <p>Below, you can view all of the code used in our project.</p>
@@ -64,7 +81,7 @@
           border: none;
           text-align: left;
           outline: none;
-          font-size: 15px;
+          font-size: 20px;
           transition: 0.4s;
         }
         
