@@ -11,7 +11,7 @@ for(let i = 0; i < lotArray.length; i++){
 
 
 if((lotArray.includes(lotname)) == false){
-  readline.question('What parking lot have you parked in? Select from the above list :', lotname => {
+  readline.question('What parking lot have you parked in? Select from the above list :'), lotname => {
 
     console.log(`You've parked in ${lotname}!`);
 
@@ -25,4 +25,4 @@ readline.question('How full is this parking lot on a scale of 1 through 10?', lo
   readline.close();
   });
   
-});
+};
