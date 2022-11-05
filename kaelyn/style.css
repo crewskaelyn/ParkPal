@@ -23,8 +23,8 @@ body {
     display: inline-block;
     cursor: pointer;
     position: fixed;
-    top: 20px;
-    right: 25px;
+    top: 45px;
+    right: 50px;
     z-index: 1;
 }
 
