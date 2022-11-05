@@ -1,4 +1,4 @@
-# tigerhacks
+# Tigerhacks 2022!
 Hello! Welcome to ParkPal!
 
 This is our project that we have created for the Mizzou Tigerhacks 2022 Event.
