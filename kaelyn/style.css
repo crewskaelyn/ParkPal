@@ -19,18 +19,19 @@ body {
     font-size: 24px;
     color: white;
     z-index: 2;
-    opacity: 60%;
+    opacity: 70%;
   }
 
 .navbar {
     overflow: hidden;
     background-color: #333;
-    opacity: 60%;
+    opacity: 70%;
     position: fixed;
     top: 0;
     width: 100%;
     left:0;
     height: 80px;
+    z-index: 1;
   }
   
 
@@ -49,4 +50,67 @@ body {
   .navbar a:hover {
     background: #ddd;
     color: black;
+  }
+
+  .map {
+    position: absolute;
+    right: 10px;
+    top: 525px;
+  }
+
+  ul {
+    font-size: 20px;
+    position: absolute;
+    left: 40px;
+  }
+
+  h2 {
+    font-size: 25px;
+    position: relative;
+    left: 30px;
+  }
+
+  .accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+  
+
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+  }
+
+  .accordion:after {
+    content: '\02795';
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2796";
+  }
+
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
   }
