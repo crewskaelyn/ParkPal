@@ -10,12 +10,13 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    border: 10px solid #333;
   }
   
 .title {
     position: fixed;
     top: -20px;
-    left: 25px;
+    left: 40px;
     font-size: 24px;
     color: white;
     z-index: 2;
@@ -40,7 +41,7 @@ body {
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 30px 25px;
+    padding: 30px 20px;
     text-decoration: none;
     font-size: 25px;
     margin-right: 10px; 
@@ -58,45 +59,13 @@ body {
     top: 525px;
   }
 
-  ul {
-    font-size: 20px;
-    position: absolute;
-    left: 40px;
-  }
-
-  h2 {
-    font-size: 25px;
+  .code {
     position: relative;
-    left: 30px;
-  }
-
-  .accordion {
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
-  }
-  
-
-  .active, .accordion:hover {
-    background-color: #ccc;
-  }
-  
-
-  .panel {
-    padding: 0 18px;
-    background-color: white;
-    display: none;
-    overflow: hidden;
+    left: 0;
   }
 
   .accordion:after {
-    content: '\02795';
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
     font-size: 13px;
     color: #777;
     float: right;
@@ -104,13 +73,5 @@ body {
   }
   
   .active:after {
-    content: "\2796";
-  }
-
-  .panel {
-    padding: 0 18px;
-    background-color: white;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
   }
