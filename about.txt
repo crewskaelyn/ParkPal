@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>ParkPal</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div class="heading">
+            <div class="title">
+                <h1>ParkPal</h1>
+            </div>
+        </div>
+        <div class="headerbar"></div>
+        <div id="navbar">
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./lotinfo.html">Lot Info</a>
+            <a href="./code.html">Code</a>
+        </div>
+        <script>
+            window.onscroll = function() {myFunction()};
+            
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+            
+            function myFunction() {
+              if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+              } else {
+                navbar.classList.remove("sticky");
+              }
+            }
+        </script>
+        <div id="about">
+          <h2>About</h2>
+            <h3>What It Is</h3>
+            <p>The program that is hosted on this website holds has one main purpose. To make parking easier for those in Columbia.
+                It provides statistics on which parking lots are the least full, allows the user to input which parking lot they are
+                parking in and for how long, allows them to rate how full they believe the lot is, and provides a forum for users to
+                give feedback on what is happining downtown.</p>
+            <br>
+            <h3>Who We Are</h3>
+            <h4>Logan Limbaugh</h4>
+            <p>I am a sophomore at the University of Missouri in pursuit of a Bachelor's in Information Technology. I plan to work in 
+                cybersecurity for the government when I leave college. For this project, I worked on developing the program hosted on 
+                the website using C#. </p>
+            <p>I come from a small town in southeast Missouri with a population of about 2,000. I was fortunate enough to be able to 
+                attend Mizzou through scholarships and grants. I am a first generation student, so not only has this been a new
+                experience for me, but also for my family. 
+            </p>
+            <h4>Kaelyn Crews</h4>
+            <p>I am a sophomore at the University of Missouri in pursuit of a Bachelor's in Information Technology and a minor in
+                Psychology. I plan to work in either Software Development or Web Development. For this project, I created the website,
+                using HTML, Javascript, and CSS. </p>
+            <p>I am from a town just 40 minutes from Columbia with a population of only 250. My graduating class was only 16, and I was
+                one of only a couple who are attending a university.</p>
+            <br>
+            <h3>Why We Made It</h3>
+            <p>For the past 36 hours, the both of us have been programming this website and the program that resides on it. This
+                weekend was the University of Missouri's Hackathon, also known as TigerHacks. The theme this year was Transportation.
+                With both of us living in Columbia, we have been faced with the difficulties of parking downtown time and time again.
+                Since we both come from small towns, driving and parking anxiety is a constant struggle.When we found out about this
+                year's theme, we both knew exactly what we wanted to do. </p>
+            <br>
+        </div>
+    </body>
+</html>

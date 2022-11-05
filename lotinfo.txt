@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>ParkPal</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div class="heading">
+            <div class="title">
+                <h1>ParkPal</h1>
+            </div>
+        </div>
+        <div class="headerbar"></div>
+        <div id="navbar">
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./lotinfo.html">Lot Info</a>
+            <a href="./code.html">Code</a>
+        </div>
+        <div class="content">
+
+        </div>
+        <script>
+            window.onscroll = function() {myFunction()};
+            
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+            
+            function myFunction() {
+              if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+              } else {
+                navbar.classList.remove("sticky");
+              }
+            }
+        </script>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/d/embed?mid=1E0E-tTrC_kJkMOCrAYs_il4UoaH62tM&hl=en&ehbc=2E312F" width="640" height="480"></iframe>
+        </div>
+        <div>
+            <h2 class="lotInfo">Lots Available</h2>
+            <ul id="lotList">
+                <li>Virginia Avenue Garage</li>
+                <li>Conley Avenue Garage</li>
+                <li>10th & Cherry Garage</li>
+                <li>Hitt Street</li>
+                <li>Turner Avenue</li>
+                <li>5th & Walnut</li>
+                <li>Short Street Garage</li>
+                <li>8th & Cherry</li>
+                <li>6th & Cherry</li>
+                <li>UM Hospital</li>
+                <li>William Street Garage</li>
+                <li>UM Lot AV8</li>
+                <li>UM Lot AV11</li>
+                <li>UM Lot G</li>
+                <li>UM Lot J</li>
+            </ul>
+        </div>
+    </body>
+</html>

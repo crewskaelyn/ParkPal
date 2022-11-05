@@ -43,13 +43,9 @@
         <button class="accordion">HTML Code</button>
         <div class="panel">
           <h3>Index.html</h3>
-            <div id="list"><p><iframe src="index.txt" width=800 height=400 frameborder=0 ></iframe></p></div>
           <h3>About.html</h3>
-            <div id="list"><p><iframe src="about.txt" width=800 height=400 frameborder=0 ></iframe></p></div>
           <h3>LotInfo.html</h3>
-            <div id="list"><p><iframe src="lotinfo.txt" width=800 height=400 frameborder=0 ></iframe></p></div>
           <h3>Code.html</h3>
-            <div id="list"><p><iframe src="code.txt" width=800 height=400 frameborder=0 ></iframe></p></div>
         </div>
 
         <button class="accordion">CSS</button>
@@ -59,7 +55,7 @@
 
         <button class="accordion">C# Code</button>
         <div class="panel">
-          <div id="list"><p><iframe src="style.txt" width=800 height=400 frameborder=0 ></iframe></p></div>
+            <p></p>
         </div>
 
         <script>
@@ -78,8 +74,6 @@
         });
         }
         </script>
-        <br>
-        <br>
     </body>
     <style>
         .accordion {
