@@ -1,4 +1,4 @@
-var x = document.getElementById("Parking");
+var x = document.getElementById("parking");
 
 const person = {firstName:"John", lastName:"Doe", age:46};
 
